@@ -13,7 +13,7 @@ Visit this link and download VS code onto your computer: [VSCode](https://code.v
 ## Remotely Connecting
 First, you need to make sure git is installed iin your computer. If not, be sure to install it.
 
-First, you need to find your CSE 15L account using UCSD account lookup: [Account Search](https://sdacs.ucsd.edu/~icc/index.php)
+Then, you need to find your CSE 15L account using UCSD account lookup: [Account Search](https://sdacs.ucsd.edu/~icc/index.php)
 
 <img width="1040" alt="Screen Shot 2023-01-14 at 10 16 32 AM" src="https://user-images.githubusercontent.com/52465268/212488898-b438c96a-870d-411b-be57-e37159580672.png">
 
