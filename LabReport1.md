@@ -4,7 +4,7 @@ Visit this link and download VS code onto your computer: [VSCode](https://code.v
 
 <img width="1149" alt="Screen Shot 2023-01-14 at 10 07 32 AM" src="https://user-images.githubusercontent.com/52465268/212488578-8912019b-ffb0-4f99-bc8c-514274c38dd0.png">
 
-1. It is important to identify the type of processing system of your commputer, so you can download accordingly.
+1. It is important to identify the type of processing system of your computer, so you can download accordingly.
 2. Once downloaded, follow all the steps the app ay have in the download process.
 3. Once done with the installation of the app, you can proceed to open the app for the upcoming steps.
 4. Your computer may already have VSCode on it, so it may not be necessary to download.
@@ -33,7 +33,7 @@ Once you have opened up the terminal, hover over the "+" symbol and select bash 
 
 In the bash terminal, enter the command **ssh cs15lwi23(abc)@ieng6.ucsd.edu** with abc beiing the 3 specific letters given to you for your account.
 
-When you first login, it will provide this mmessage in the image below. Be sure to type "yes."
+When you first login, it will provide this message in the image below. Be sure to type "yes."
 
 <img width="598" alt="Screen Shot 2023-01-14 at 10 26 33 AM" src="https://user-images.githubusercontent.com/52465268/212489815-ebbba83a-5cdd-4a41-9315-d0b23683e949.png">
 
@@ -44,7 +44,7 @@ The password may take multiple tries, so make sure to keep trying until it authe
 ---
 ## Trying Some Commands
 Once you complete the login process, you can begin to try some commands.
-Some essential ccommands that you can choose to try include:
+Some essential commands that you can choose to try include:
 | Command | Description |
 | --- | ----------- |
 | `cd ~` | changes directory |
@@ -61,3 +61,5 @@ Here is an example of me trying some commands.
  <img width="401" alt="Screen Shot 2023-01-14 at 10 41 03 AM" src="https://user-images.githubusercontent.com/52465268/212490669-3d1e18cd-4174-4a51-8b3d-e23f18d1c33b.png">
 
 > To exit the terminal, run the command exit or control+D.
+
+Via these commands, I was able to acquire information that I needed from the directory, manipulate the terminal to access the directory that I wanted to access, and use these commands to add to the directory as well. What I found interesting was just how fast these processes take place, how important it is to be precise in what you type into the terminal, and what is returned to the user after each command and what may be happening behind the scenes in contrast. In general, each command does something different in the directory and yields a different input to the user as a result; nevertheless, there are many ways for the student to interact with their terminal and work in their directory.
