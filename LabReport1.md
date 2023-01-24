@@ -46,6 +46,7 @@ The password may take multiple tries, so make sure to keep trying until it authe
 Once you complete the login process, you can begin to try some commands.
 Some essential ccommands that you can choose to try include:
 | Command | Description |
+| --- | ----------- |
 | `cd ~` | changes directory |
 | `cd` | changes directory |
 | `ls -lat` | lists files |
