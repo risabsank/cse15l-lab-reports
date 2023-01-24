@@ -45,6 +45,14 @@ The password may take multiple tries, so make sure to keep trying until it authe
 ## Trying Some Commands
 Once you complete the login process, you can begin to try some commands.
 Some essential ccommands that you can choose to try include:
+| Command | Description |
+| `cd ~` | changes directory |
+| `cd` | changes directory |
+| `ls -lat` | lists files |
+| `ls -a` | lists files |
+| `ls <directory>` | lists files of another directory |
+| `cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/` | classpath |
+| `cat /home/linux/ieng6/cs15lwi23/public/hello.txt` | concatenate |
 1. `cd ~` changes directory
 2. `cd` changes directory
 3. `ls -lat` lists files
