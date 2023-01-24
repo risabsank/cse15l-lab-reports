@@ -54,13 +54,6 @@ Some essential ccommands that you can choose to try include:
 | `ls <directory>` | lists files of another directory |
 | `cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/` | classpath |
 | `cat /home/linux/ieng6/cs15lwi23/public/hello.txt` | concatenate |
-1. `cd ~` changes directory
-2. `cd` changes directory
-3. `ls -lat` lists files
-4. `ls -a` lists files
-5. `ls <directory>` lists files of another directory
-6. `cp /home/linux/ieng6/cs15lwi23/public/hello.txt ~/`  classpath
-7. `cat /home/linux/ieng6/cs15lwi23/public/hello.txt` concatenate
 
 Be sure to observe how these different commands affect the results or the terminal itself.
 Here is an example of me trying some commands.
