@@ -45,4 +45,8 @@ class StringServer {
     }
 }
 ```
+**Screenshot 1:**
 <img width="935" alt="Screen Shot 2023-01-28 at 3 48 12 PM" src="https://user-images.githubusercontent.com/52465268/215296315-839e439f-331f-4d5b-bf75-d8626a922b93.png">
+**Screenshot 2:**
+<img width="901" alt="Screen Shot 2023-01-28 at 3 49 15 PM" src="https://user-images.githubusercontent.com/52465268/215296340-b593adb7-164c-4825-aaac-92fd6ecfdfc8.png">
+
