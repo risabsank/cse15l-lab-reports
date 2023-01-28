@@ -1,6 +1,7 @@
 # Lab Report 2
 ## Implementing String Server
 **My Code for String Server:**
+
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -44,3 +45,4 @@ class StringServer {
     }
 }
 ```
+<img width="935" alt="Screen Shot 2023-01-28 at 3 48 12 PM" src="https://user-images.githubusercontent.com/52465268/215296315-839e439f-331f-4d5b-bf75-d8626a922b93.png">
