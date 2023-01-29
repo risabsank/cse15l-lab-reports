@@ -73,6 +73,7 @@ The handleRequest() method has a relevant argument which is the url of the websi
 The numOfMessages field is updated with every new message as it is incremented by 1 each time. Similarly, the String userSees is updated with every new message. The argument of handleRequest changes based on the URL that is inputted by the user. Other than that, no other values change as the argument remians constant regardless of the change in the url and the number of messages that have been sent through to the user.
 
 ## Bugs
+
 The bug that I chose to look at was averageWithoutLowest from ArrayExamples.java:
 
 ```
@@ -101,6 +102,7 @@ static double averageWithoutLowest(double[] arr) {
  ```
  
  Not failure-inducing input:
+ 
  ```
  @Test
     public void testAvgTwo() {
@@ -137,6 +139,7 @@ static double averageWithoutLowest(double[] arr) {
  ```
 
 After Change:
+
 ```
 static double averageWithoutLowest(double[] arr) {
         if (arr.length < 2) {
@@ -163,5 +166,6 @@ static double averageWithoutLowest(double[] arr) {
 
 The issue with the code initially was that it removed every count of the lowest number when calculating the average of the array, whereas the goal was to only exclude one count of the lowest number from the average. As a result, the change I made to the code was to ensure that the lowest number was only removed once using a boolean to see whether it had already been removed.
 
-##Lessons I Learned
+## Lessons I Learned
+
 Something that I learned and found really interesting to work with was servers, like the String Server I got to implement at the start of this lab as well as the Number Server that we got to implement during Lab 2. I got to learn about how different parts of a url provide different information and how to acquire that information from the url to then return something to the user on a website. This was really interesting to do because you got to see those results instantly on your local website. Particularly, I learnned how to use queries to obtan information from the website to then return a certain result to the user. I also found it really cool how with the account and connecting remotely not only were you able to make a remote website that others could access, but you could also access other people's local websites and I thought it was really cool how we got to see all of these different websites in real time. 
