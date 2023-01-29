@@ -114,4 +114,8 @@ static double averageWithoutLowest(double[] arr) {
 <img width="868" alt="Screen Shot 2023-01-28 at 6 25 35 PM" src="https://user-images.githubusercontent.com/52465268/215301016-28dd2aa1-2ab9-4f08-b54c-742aa8a9664c.png">
 
 **Result of Second Input:**
+
 <img width="772" alt="Screen Shot 2023-01-28 at 6 27 01 PM" src="https://user-images.githubusercontent.com/52465268/215301063-60bcea2f-6a22-4a23-a82c-a76d0d4b5367.png">
+The test runs with no issue as indicated by the green checkmark.
+
+
