@@ -45,8 +45,17 @@ class StringServer {
     }
 }
 ```
+
 **Screenshot 1:**
+
 <img width="935" alt="Screen Shot 2023-01-28 at 3 48 12 PM" src="https://user-images.githubusercontent.com/52465268/215296315-839e439f-331f-4d5b-bf75-d8626a922b93.png">
+
 **Screenshot 2:**
+
 <img width="901" alt="Screen Shot 2023-01-28 at 3 49 15 PM" src="https://user-images.githubusercontent.com/52465268/215296340-b593adb7-164c-4825-aaac-92fd6ecfdfc8.png">
 
+The methods in my code that are called for each screenshot are handleRequest. handleRequest checks to see that the path that is requested is `"add-message," using the getPath() method in the URI imported library. It then acquires the query by using the getQuery() method and uses the split method to separate the query into separate elements of an erray separated off of "=" signs. After it verifies this information, it updates the String that is then returned to the user on the website. To start the website, the StringServer class uses the start method in the Server.java class to start up the website locally.
+
+The handleRequest() method has a relevant argument which is the url of the website. getPath() and getQuery() do not have arguments in them. Relevant fields of the class include the numOfMessages instance variable that is used to keep track of the number of messages. Additionally, userSees is a String that is updated with every new message and then returned to the user.
+
+The numOfMessages field is updated with every new message as it is incremented by 1 each time. Similarly, the String userSees is updated with every new message. The argument of handleRequest changes based on the URL that is inputted by the user. Other than that, no other values change as the argument remians constant regardless of the change in the url and the number of messages that have been sent through to the user.
