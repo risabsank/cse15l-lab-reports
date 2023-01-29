@@ -111,6 +111,7 @@ static double averageWithoutLowest(double[] arr) {
  ```
  
 **Result of First Input:**
+
 <img width="868" alt="Screen Shot 2023-01-28 at 6 25 35 PM" src="https://user-images.githubusercontent.com/52465268/215301016-28dd2aa1-2ab9-4f08-b54c-742aa8a9664c.png">
 
 **Result of Second Input:**
@@ -118,4 +119,49 @@ static double averageWithoutLowest(double[] arr) {
 <img width="772" alt="Screen Shot 2023-01-28 at 6 27 01 PM" src="https://user-images.githubusercontent.com/52465268/215301063-60bcea2f-6a22-4a23-a82c-a76d0d4b5367.png">
 The test runs with no issue as indicated by the green checkmark.
 
+Before Change:
 
+```
+static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    for(double num: arr) {
+      if(num < lowest) { lowest = num; }
+    }
+    double sum = 0;
+    for(double num: arr) {
+      if(num != lowest) { sum += num; }
+    }
+    return sum / (arr.length - 1);
+  }
+ ```
+
+After Change:
+```
+static double averageWithoutLowest(double[] arr) {
+        if (arr.length < 2) {
+            return 0.0;
+        }
+        double lowest = arr[0];
+        for (double num : arr) {
+            if (num < lowest) {
+                lowest = num;
+            }
+        }
+        double sum = 0;
+        boolean lowestRemoved = false;
+        for (double num : arr) {
+            if (num == lowest && !lowestRemoved) {
+                lowestRemoved = true;
+            } else if (num != lowest || lowestRemoved) {
+                sum += num;
+            }
+        }
+        return sum / (arr.length - 1);
+    }
+```
+
+The issue with the code initially was that it removed every count of the lowest number when calculating the average of the array, whereas the goal was to only exclude one count of the lowest number from the average. As a result, the change I made to the code was to ensure that the lowest number was only removed once using a boolean to see whether it had already been removed.
+
+##Lessons I Learned
+Something that I learned and found really interesting to work with was servers, like the String Server I got to implement at the start of this lab as well as the Number Server that we got to implement during Lab 2. I got to learn about how different parts of a url provide different information and how to acquire that information from the url to then return something to the user on a website. This was really interesting to do because you got to see those results instantly on your local website. Particularly, I learnned how to use queries to obtan information from the website to then return a certain result to the user. I also found it really cool how with the account and connecting remotely not only were you able to make a remote website that others could access, but you could also access other people's local websites and I thought it was really cool how we got to see all of these different websites in real time. 
