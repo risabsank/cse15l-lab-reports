@@ -1,6 +1,7 @@
 # Lab Report 3
 ## Researching Commands (the grep command)
 **`grep - r`**
+
 Examples:
 
 Example 1:
@@ -40,6 +41,7 @@ Explanation of What The Command Does:
 Source: https://en.wikibooks.org/wiki/Grep
 
 **`grep -i`**
+
 Examples:
 
 Example 1:
