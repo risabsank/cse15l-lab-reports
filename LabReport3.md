@@ -34,5 +34,7 @@ skill-demo1-data/written_2/non-fiction/OUP/Castro/chQ.txt:References Chavéz 198
 ```
 
 Explanation of What The Command Does:
+
 Source: https://en.wikibooks.org/wiki/Grep
+
 `grep -r` searches the files in a directory recursively, looking for the particular word or phrase that you have typed in the quotation marks next to the command in each text file in the directory. Once it identifies where these phrases in text files are located in the folder, it returns where in the text file that the word/phrase was found as well as a path to identify how to get to to the file in which that word was found. The `grep -r` command is useful in navigating through a large directory when looking for a specific thing.
