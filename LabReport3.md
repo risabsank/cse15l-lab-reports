@@ -112,3 +112,51 @@ Explanation of What The Command Does:
 Source: https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/
 
 **`grep -v -e "pattern"`**
+
+Examples:
+
+Example 1:
+
+Input:
+
+```
+grep -v -e "Algarve" Algarve-Intro.txt
+```
+
+```
+the ALGARVE andITS People
+Its consistent climate is the best in Portugal, and one of the kindest in the world: more than 250 days of sunshine a year — more than almost any other international resort area. The moderating effect of the Gulf Stream produces a fresh springtime breeze throughout winter, and in late January and February, white almond blossoms blanket the fields. In summer the heat is intense but rarely unbearable, and regardless, beautiful beaches and innumerable pools are always just a dive away.
+The coast is neatly divided into the rugged Barlavento to the west and the flat beauty of Sotavento to the east. West is where you’ll find the famous orange cliffs and surreal eroded rock stacks. Near Cabo de São Vicente and Sagres, the extreme western point, the terrain is surprisingly barren and the facilities decidedly low-key. The ocean can also be forbiddingly cold.
+Tourist resorts clutter the entire middle of the coast, from Lagos to Faro, with a spectrum of homes away from home — monster high-rises to low-rider villas — spilling across the rolling hills and lining the beaches. Resorts like Portimão, Albufeira and Vilamoura would appear to have little room left to grow, yet tourist facilities seem to mate with each other and reproduce overnight. Much of the unstoppable growth is crass and frighteningly commercial, and the crowds in summer unbearable.
+Away from the coast, the terrain slopes through pines, mimosa, eucalyptus, and heather to an altitude of nearly 915 m (3,000 ft). Vacationers wishing to escape the maddening beach crowds can run for the hills, especially the tantalizing Serra de Monchique.
+The region’s exotic name is derived from the Arabic,Al-Gharb, meaning “country of the west.” The westernmost territory of Europe was highly prized by North African Moors, who occupied it from the eighth to the 13th centuries. Their half millennium here left indelible traces, seen today in whitewashed houses, hilltop castles, and colorful ceramic tiles.
+Spain’s Costa del Sol developed earlier and more rapidly (and some would say, more disastrously). Yet the lessons of rampant, ill-advised development across the border were not heeded. Only recently has environmental and aesthetic consciousness at least mandated that newer developments be limited to low-rises.
+A visit to the local fish market is a revealing window into Algarvian life. Negotiations are serious but friendly. The same scenario is played out a thousand times a day at markets all across the region; every town has a market day at least once a month. Farmers bring their livestock to trade, and artisans and itinerant vendors sell their wares.
+The Portuguese are famously hospitable, if reserved. And they remain tolerant and helpful, even though they know that their lovely coast is no longer just theirs.
+```
+
+Example 2:
+
+Input:
+
+```
+grep -v -e "the" Bahamas-History.txt
+```
+
+Output:
+
+```
+A Brief History
+Colonization and Piracy
+The American Revolutionary War
+Emancipation and Decline
+Civil War Blockade Running
+The 20th Century
+```
+
+Explanation of What The Command Does:
+
+`grep -v -e "pattern"` checks a file to see where the pattern is present and removes that entire sentence from the output if the pattern is present in that sentence. In the first example, I removed all patterns of "Algarve" and as a result, none of the sentences do not have the pattern "Algarve" present in the sentence. Similarly, I removed all patterns of "the" from Bahamas-History.txt, so the only thing that was returned was the titles of each passage which did not use the word "the" in them.
+
+
+Source: https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/
