@@ -161,4 +161,58 @@ Explanation of What The Command Does:
 
 Source: https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/
 
-**
+**`grep -o -b "pattern"`**
+
+Examples:
+
+Example 1:
+
+Input:
+
+```
+grep -o -b "Lucayans" Bahamas-History.txt
+```
+
+Output:
+
+```
+20:Lucayans
+829:Lucayans
+```
+
+Example 2:
+
+Input:
+
+```
+grep -o -b "Algarve" Algarve-Intro.txt
+```
+
+Output:
+
+```
+30:Algarve
+Algarve
+598:Algarve
+Algarve
+1484:Algarve
+1816:Algarve
+Algarve
+3085:Algarve
+Algarve
+3963:Algarve
+Algarve
+4668:Algarve
+Algarve
+5592:Algarve
+6053:Algarve
+6745:Algarve
+6989:Algarve
+7301:Algarve
+```
+
+Explanation of What The Command Does:
+
+`grep -o -b "pattern"` finds where the pattern is located in a text file and returns to the user the  exact location of that word in the text file. This can be seen in the examples where the line numbers in which the word is located can be found. Additionally, if the word is found more than once in the same line, the pattern is printed twice next to the line number.
+
+Source: https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/
