@@ -38,7 +38,7 @@ Explanation of What The Command Does:
 
 `grep -r` searches the files in a directory recursively, looking for the particular word or phrase that you have typed in the quotation marks next to the command in each text file in the directory. Once it identifies where these phrases in text files are located in the folder, it returns where in the text file that the word/phrase was found as well as a path to identify how to get to to the file in which that word was found. The `grep -r` command is useful in navigating through a large directory when looking for a specific thing.
 
-Source: https://en.wikibooks.org/wiki/Grep
+Source: [https://en.wikibooks.org/wiki/Grep](https://en.wikibooks.org/wiki/Grep)
 
 **`grep -i`**
 
@@ -109,7 +109,7 @@ Explanation of What The Command Does:
 
 `grep -i` searches for a specific pattern in a text file, but ignores case sensitivity. In the examples above, regardless if and was capitalized as "And" or left as "and," it returned wherever this pattern was found regardless of the uppercase. This is also seen with "algarve" in that all the times in which "algarve" was used with uppercase in the file was also returned to the user.
 
-Source: https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/
+Source: [https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/](https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/)
 
 **`grep -v -e "pattern"`**
 
@@ -159,7 +159,7 @@ Explanation of What The Command Does:
 `grep -v -e "pattern"` checks a file to see where the pattern is present and removes that entire sentence from the output if the pattern is present in that sentence. In the first example, I removed all patterns of "Algarve" and as a result, none of the sentences do not have the pattern "Algarve" present in the sentence. Similarly, I removed all patterns of "the" from Bahamas-History.txt, so the only thing that was returned was the titles of each passage which did not use the word "the" in them.
 
 
-Source: https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/
+Source: [https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/](https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/)
 
 **`grep -o -b "pattern"`**
 
@@ -215,4 +215,4 @@ Explanation of What The Command Does:
 
 `grep -o -b "pattern"` finds where the pattern is located in a text file and returns to the user the  exact location of that word in the text file. This can be seen in the examples where the line numbers in which the word is located can be found. Additionally, if the word is found more than once in the same line, the pattern is printed twice next to the line number.
 
-Source: https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/
+Source: [https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/](https://www.thegeekstuff.com/2009/03/15-practical-unix-grep-command-examples/)
