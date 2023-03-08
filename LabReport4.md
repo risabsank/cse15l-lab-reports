@@ -45,7 +45,18 @@ Keys Pressed:
 <down key pressed 42 times><right key pressed 12 times><delete><type: 2><Control><O><Enter><Control><X>
 ```
 
-`nano ListExamples.java` enables me to edit the file and find where the error is. I identify where the error is, access that point in the file and edit it. Then I save the edit using `<control><O>` and exit the editing ability using `<control><X>`. 
+`nano ListExamples.java` enables me to edit the file and find where the error is. I identify where the error is, access that point in the file and edit it. 
+
+The particular error that I identified is that the wrong value was incremented in this block of code. 
+
+```
+while(index2 < list2.size()) {
+      result.add(list2.get(index2));
+      index1 += 1;
+    }
+```
+
+Instead of incrementing index2 when index2 less than list2.size(), it incremented index1 which means the while loop will never end and it causes a runtime error. The keys I pressed in nano to resolve the issue are listed above: `<down key pressed 42 times><right key pressed 12 times><delete><type: 2>`. Then I save the edit using `<control><O>` and exit the editing ability using `<control><X>`. 
 
 **Step 8**
 
