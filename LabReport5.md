@@ -626,6 +626,8 @@ Source: [https://www.linode.com/docs/guides/find-files-in-linux-using-the-comman
 
 **`find . -type f -not -name [pattern]`**
 
+Examples:
+
 Example 1: in directory skill-demo1-data
 
 Input:
