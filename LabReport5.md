@@ -432,3 +432,253 @@ Ouput:
 ./travel_guides/berlitz2/Vallarta-WhatToDo.txt
 ./travel_guides/berlitz2/Vallarta-WhereToGo.txt
 ```
+
+Explanation of What The Command Does:
+
+`find -name *.txt` searches through the files in the directory for the provided pattern, particularly in this case, the pattern was '.txt'. As a result, the command returned every file in the folder that contains '.txt' in its file name, printing out the path to the file from the current directory. Commonly, this find method may direct all the files with the desired pattern to another file, where wc could then be used to find the number of files that are text files or another type of file based on what the user desires to find in a directory.
+
+Source: [https://www.geeksforgeeks.org/find-command-in-linux-with-examples/](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/)
+
+**`find -name [txt file] -exec rm -i {} \;`**
+
+Examples:
+
+Example 1:
+
+Input:
+
+```
+find -name PuertoRico-WhatToDo.txt -exec rm -i {} \; 
+rm: remove regular file './berlitz2/PuertoRico-WhatToDo.txt'? y
+```
+
+Output: No direct output, however, we can now see that PuertoRico-WhatToDo.txt is no longer in the directory when files are listed.
+
+When list files was called before:
+
+```
+Algarve-History.txt      Berlin-WhatToDo.txt          CostaBlanca-History.txt
+Algarve-Intro.txt        Berlin-WhereToGo.txt         CostaBlanca-WhatToDo.txt
+Algarve-WhatToDo.txt     Bermuda-WhatToDo.txt         Crete-History.txt
+Algarve-WhereToGo.txt    Bermuda-WhereToGo.txt        Crete-WhatToDo.txt
+Amsterdam-History.txt    Bermuda-history.txt          Crete-WhereToGo.txt
+Amsterdam-Intro.txt      Boston-WhereToGo.txt         CstaBlanca-WhereToGo.txt
+Amsterdam-WhatToDo.txt   Budapest-History.txt         Cuba-History.txt
+Amsterdam-WhereToGo.txt  Budapest-WhatToDo.txt        Cuba-WhatToDo.txt
+Athens-History.txt       Budapest-WhereoGo.txt        Cuba-WhereToGo.txt
+Athens-Intro.txt         California-History.txt       Nepal-History.txt
+Athens-WhatToDo.txt      California-WhatToDo.txt      Nepal-WhatToDo.txt
+Athens-WhereToGo.txt     California-WhereToGo.txt     Nepal-WhereToGo.txt
+Bahamas-History.txt      Canada-History.txt           NewOrleans-History.txt
+Bahamas-Intro.txt        Canada-WhereToGo.txt         Paris-WhatToDo.txt
+Bahamas-WhatToDo.txt     CanaryIslands-History.txt    Paris-WhereToGo.txt
+Bahamas-WhereToGo.txt    CanaryIslands-WhatToDo.txt   Poland-History.txt
+Bali-History.txt         CanaryIslands-WhereToGo.txt  Poland-WhatToDo.txt
+Bali-WhatToDo.txt        Cancun-History.txt           Portugal-History.txt
+Bali-WhereToGo.txt       Cancun-WhatToDo.txt          Portugal-WhatToDo.txt
+Barcelona-History.txt    Cancun-WhereToGo.txt         Portugal-WhereToGo.txt
+Barcelona-WhatToDo.txt   China-History.txt            PuertoRico-History.txt
+Barcelona-WhereToGo.txt  China-WhatToDo.txt           PuertoRico-WhatToDo.txt
+Beijing-History.txt      China-WhereToGo.txt          PuertoRico-WhereToGo.txt
+Beijing-WhatToDo.txt     Costa-History.txt            Vallarta-History.txt
+Beijing-WhereToGo.txt    Costa-WhatToDo.txt           Vallarta-WhatToDo.txt
+Berlin-History.txt       Costa-WhereToGo.txt          Vallarta-WhereToGo.txt
+```
+
+When list files is called now:
+
+```
+Algarve-History.txt      Berlin-WhatToDo.txt          CostaBlanca-History.txt
+Algarve-Intro.txt        Berlin-WhereToGo.txt         CostaBlanca-WhatToDo.txt
+Algarve-WhatToDo.txt     Bermuda-WhatToDo.txt         Crete-History.txt
+Algarve-WhereToGo.txt    Bermuda-WhereToGo.txt        Crete-WhatToDo.txt
+Amsterdam-History.txt    Bermuda-history.txt          Crete-WhereToGo.txt
+Amsterdam-Intro.txt      Boston-WhereToGo.txt         CstaBlanca-WhereToGo.txt
+Amsterdam-WhatToDo.txt   Budapest-History.txt         Cuba-History.txt
+Amsterdam-WhereToGo.txt  Budapest-WhatToDo.txt        Cuba-WhatToDo.txt
+Athens-History.txt       Budapest-WhereoGo.txt        Cuba-WhereToGo.txt
+Athens-Intro.txt         California-History.txt       Nepal-History.txt
+Athens-WhatToDo.txt      California-WhatToDo.txt      Nepal-WhatToDo.txt
+Athens-WhereToGo.txt     California-WhereToGo.txt     Nepal-WhereToGo.txt
+Bahamas-History.txt      Canada-History.txt           NewOrleans-History.txt
+Bahamas-Intro.txt        Canada-WhereToGo.txt         Paris-WhatToDo.txt
+Bahamas-WhatToDo.txt     CanaryIslands-History.txt    Paris-WhereToGo.txt
+Bahamas-WhereToGo.txt    CanaryIslands-WhatToDo.txt   Poland-History.txt
+Bali-History.txt         CanaryIslands-WhereToGo.txt  Poland-WhatToDo.txt
+Bali-WhatToDo.txt        Cancun-History.txt           Portugal-History.txt
+Bali-WhereToGo.txt       Cancun-WhatToDo.txt          Portugal-WhatToDo.txt
+Barcelona-History.txt    Cancun-WhereToGo.txt         Portugal-WhereToGo.txt
+Barcelona-WhatToDo.txt   China-History.txt            PuertoRico-History.txt
+Barcelona-WhereToGo.txt  China-WhatToDo.txt           PuertoRico-WhereToGo.txt
+Beijing-History.txt      China-WhereToGo.txt          Vallarta-History.txt
+Beijing-WhatToDo.txt     Costa-History.txt            Vallarta-WhatToDo.txt
+Beijing-WhereToGo.txt    Costa-WhatToDo.txt           Vallarta-WhereToGo.txt
+Berlin-History.txt       Costa-WhereToGo.txt
+```
+
+Example 2:
+
+Input:
+
+```
+find ./Abernathy -name ch1.txt -exec rm -i {} \; 
+rm: remove regular file './Abernathy/ch1.txt'? y
+```
+
+Output: No direct output, however, we can now see that ch1.txt is no longer in the directory when files are listed.
+
+Before file is removed:
+
+```
+ch1.txt  ch14.txt  ch15.txt  ch2.txt  ch3.txt  ch6.txt  ch7.txt  ch8.txt  ch9.txt
+```
+
+After file is removed:
+
+```
+ch14.txt  ch15.txt  ch2.txt  ch3.txt  ch6.txt  ch7.txt  ch8.txt  ch9.txt
+```
+
+Explanation of What The Command Does:
+
+`find -name [txt file] -exec rm -i {} \;` searches through the files in the directory for the provided text file name and then proceeds to remove the file from the directory. Additionally, we see that there is a confirmation message as soon as the method is called to ensure that the user for sure wants to delete the listed file. We can see the results of this method when calling list files in the directory of which the file is removed as the file is no longer listed when we call list files when in the directory.
+
+Source: [https://www.geeksforgeeks.org/find-command-in-linux-with-examples/](https://www.geeksforgeeks.org/find-command-in-linux-with-examples/)
+
+**`find -type d`**
+
+Examples:
+
+Example 1:
+
+Input: in the skill-demo1-data directory
+
+```
+find -type d
+```
+
+Output:
+
+```
+.
+./.git
+./.git/info
+./.git/hooks
+./.git/branches
+./.git/refs
+./.git/refs/heads
+./.git/refs/tags
+./.git/refs/remotes
+./.git/refs/remotes/origin
+./.git/objects
+./.git/objects/pack
+./.git/objects/info
+./.git/logs
+./.git/logs/refs
+./.git/logs/refs/remotes
+./.git/logs/refs/remotes/origin
+./.git/logs/refs/heads
+./written_2
+./written_2/non-fiction
+./written_2/non-fiction/OUP
+./written_2/non-fiction/OUP/Abernathy
+./written_2/non-fiction/OUP/Berk
+./written_2/non-fiction/OUP/Castro
+./written_2/non-fiction/OUP/Fletcher
+./written_2/non-fiction/OUP/Kauffman
+./written_2/non-fiction/OUP/Rybczynski
+./written_2/travel_guides
+./written_2/travel_guides/berlitz1
+./written_2/travel_guides/berlitz2
+```
+
+Example 2:
+
+Input: in the written_2 directory
+
+```
+find -type d
+```
+
+Ouput:
+
+
+```
+.
+./non-fiction
+./non-fiction/OUP
+./non-fiction/OUP/Abernathy
+./non-fiction/OUP/Berk
+./non-fiction/OUP/Castro
+./non-fiction/OUP/Fletcher
+./non-fiction/OUP/Kauffman
+./non-fiction/OUP/Rybczynski
+./travel_guides
+./travel_guides/berlitz1
+./travel_guides/berlitz2
+```
+
+Explanation of What The Command Does:
+
+`find -type d` searches and lists all the directories within the current directory in the terminal. Addiitionally, we see the path to these directories provided in the output of the command. This command may be useful similar to a ls command, which would enable us to see the many folders that are in a directory. 
+
+Source: [https://www.linode.com/docs/guides/find-files-in-linux-using-the-command-line/](https://www.linode.com/docs/guides/find-files-in-linux-using-the-command-line/)
+
+**`find . -type f -not -name [pattern]`**
+
+Example 1: in directory skill-demo1-data
+
+Input:
+
+```
+find . -type f -not -name "*.txt"  
+```
+
+Output:
+
+```
+./.git/info/exclude
+./.git/hooks/commit-msg.sample
+./.git/hooks/prepare-commit-msg.sample
+./.git/hooks/update.sample
+./.git/hooks/pre-rebase.sample
+./.git/hooks/pre-merge-commit.sample
+./.git/hooks/push-to-checkout.sample
+./.git/hooks/pre-push.sample
+./.git/hooks/pre-commit.sample
+./.git/hooks/post-update.sample
+./.git/hooks/pre-receive.sample
+./.git/hooks/applypatch-msg.sample
+./.git/hooks/fsmonitor-watchman.sample
+./.git/hooks/pre-applypatch.sample
+./.git/description
+./.git/refs/heads/main
+./.git/refs/remotes/origin/HEAD
+./.git/objects/pack/pack-b98cb6a4ca64cc7b2944f0fa07d3e03927d66064.pack
+./.git/objects/pack/pack-b98cb6a4ca64cc7b2944f0fa07d3e03927d66064.idx
+./.git/HEAD
+./.git/config
+./.git/logs/refs/remotes/origin/HEAD
+./.git/logs/refs/heads/main
+./.git/logs/HEAD
+./.git/packed-refs
+./.git/index
+```
+
+Example 2:
+
+Input: in directory written_2
+
+```
+find . -type f -not -name "*.txt"
+```
+
+Output:
+
+None because there are no files in the directory that do not have ".txt"
+
+Explanation of What The Command Does:
+
+`find . -type f -not -name [pattern]` finds all the files in the directory without the listed pattern in the method. In the first example, all the git files are listed as they are not text files. In the other example,  no files are listed because every file in the written_2 directory is a text file.
+
+Source: [https://alvinalexander.com/unix/edu/examples/find.shtml](https://alvinalexander.com/unix/edu/examples/find.shtml)
